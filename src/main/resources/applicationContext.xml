@@ -10,7 +10,8 @@
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
     <bean id="rockMusicBean"
-          class="ru.springcourse.lessons.RockMusic">
+          class="ru.springcourse.lessons.RockMusic"
+            factory-method="getRockMusic">
     </bean>
 
     <bean id="jazzMusicBean"
@@ -18,11 +19,14 @@
     </bean>
 
     <bean id="classicalMusicBean"
-          class="ru.springcourse.lessons.ClassicalMusic">
+          class="ru.springcourse.lessons.ClassicalMusic"
+          init-method="doInit"
+          destroy-method="doDestroy">
     </bean>
 
     <bean id="musicPlayer"
-          class="ru.springcourse.lessons.MusicPlayer">
+          class="ru.springcourse.lessons.MusicPlayer"
+          scope="prototype">
         <property name="musicList">
             <list value-type="java.util.ArrayList">
                 <ref bean="rockMusicBean"/>
