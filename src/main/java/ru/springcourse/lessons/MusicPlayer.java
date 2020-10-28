@@ -1,13 +1,43 @@
 package ru.springcourse.lessons;
 
-public class MusicPlayer {
-    private Music music;
+import java.util.List;
 
-    public MusicPlayer(Music music) {
-        this.music = music;
+public class MusicPlayer {
+    private List<Music> musicList;
+    private String name;
+    private int volume;
+
+    public MusicPlayer() {
     }
 
-    public void playMusic(){
-        System.out.println("Playing: " + music.getSong());
+    public MusicPlayer(List<Music> musicList) {
+        this.musicList = musicList;
+    }
+
+    public void setMusicList(List<Music> musicList) {
+        this.musicList = musicList;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void playMusic() {
+
+        for (Music music : musicList) {
+            System.out.println("Playing: " + music.getSong());
+        }
     }
 }
