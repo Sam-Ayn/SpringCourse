@@ -1,6 +1,7 @@
 package ru.springcourse.lessons;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -13,6 +14,19 @@ public class MusicPlayer {
     private Music rockMusic;
     @Autowired
     private Music jazzMusic;
+    @Value("${musicPlayer.name}")
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    @Value("${musicPlayer.volume}")
+    private int volume;
 
     public String playMusic(MusicGenres musicGenres) {
         String result = "";
