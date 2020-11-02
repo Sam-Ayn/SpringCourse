@@ -1,4 +1,6 @@
-package ru.springcourse.lessons;
+package ru.springcourse.lessons.songs;
+
+import ru.springcourse.lessons.songs.Song;
 
 public class WhyDontYouDoRight implements Song {
 

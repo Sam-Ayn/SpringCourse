@@ -1,4 +1,4 @@
-package ru.springcourse.lessons;
+package ru.springcourse.lessons.songs;
 
 public class BigInJapan implements Song {
 

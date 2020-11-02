@@ -1,4 +1,4 @@
-package ru.springcourse.lessons;
+package ru.springcourse.lessons.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -6,6 +6,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 import com.google.common.collect.Lists;
+import ru.springcourse.lessons.*;
+import ru.springcourse.lessons.genres.ClassicalMusic;
+import ru.springcourse.lessons.genres.JazzMusic;
+import ru.springcourse.lessons.genres.Music;
+import ru.springcourse.lessons.genres.RockMusic;
+import ru.springcourse.lessons.songs.*;
+
 import java.util.List;
 
 @Configuration

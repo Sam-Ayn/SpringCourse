@@ -1,6 +1,7 @@
-package ru.springcourse.lessons;
+package ru.springcourse.lessons.genres;
 
 import org.springframework.stereotype.Component;
+import ru.springcourse.lessons.songs.Song;
 
 import java.util.List;
 

@@ -1,4 +1,6 @@
-package ru.springcourse.lessons;
+package ru.springcourse.lessons.genres;
+
+import ru.springcourse.lessons.songs.Song;
 
 import java.util.List;
 

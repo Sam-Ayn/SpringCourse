@@ -1,6 +1,8 @@
 package ru.springcourse.lessons;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import ru.springcourse.lessons.config.SpringConfiguration;
+import ru.springcourse.lessons.genres.ClassicalMusic;
 
 public class TestSpring {
     public static void main(String[] args) {

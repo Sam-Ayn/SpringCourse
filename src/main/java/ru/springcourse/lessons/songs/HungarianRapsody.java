@@ -1,4 +1,4 @@
-package ru.springcourse.lessons;
+package ru.springcourse.lessons.songs;
 
 import org.springframework.stereotype.Component;
 

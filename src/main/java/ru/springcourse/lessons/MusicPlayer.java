@@ -1,6 +1,7 @@
 package ru.springcourse.lessons;
 
 import org.springframework.beans.factory.annotation.Value;
+import ru.springcourse.lessons.genres.Music;
 
 import java.util.List;
 
