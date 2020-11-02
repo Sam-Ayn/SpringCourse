@@ -22,7 +22,7 @@ public class RockMusic implements Music {
     }
 
     @Override
-    public List getSongs() {
+    public List<Song> getSongs() {
         return songs;
     }
 }
