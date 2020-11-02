@@ -1,14 +1,9 @@
 package ru.springcourse.lessons;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-@Component
 public class Computer {
-    private int id;
-    private MusicPlayer musicPlayer;
+    private final int id;
+    private final MusicPlayer musicPlayer;
 
-    @Autowired
     public Computer(MusicPlayer musicPlayer) {
         id = 1;
         this.musicPlayer = musicPlayer;
@@ -16,7 +11,7 @@ public class Computer {
 
     @Override
     public String toString() {
-        return "Computer" + id + " " + musicPlayer.playMusic(MusicGenres.JAZZMUSIC);
+        return "Computer" + id + " " + musicPlayer.playMusic();
     }
 }
 
